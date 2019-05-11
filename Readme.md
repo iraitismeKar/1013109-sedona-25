@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина](https://up.htmlacademy.ru/htmlcss/25/user/1013109).
-* Наставник: `Валерий Мельников` (https://htmlacademy.ru/profile/id1043615)
+* Наставник: `[Валерий Мельников]` (https://htmlacademy.ru/profile/id1043615)
 
 ---
 
