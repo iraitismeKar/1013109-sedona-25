@@ -125,8 +125,35 @@
     </footer>
     <section class="modal-search-hotel">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <!-- Здесь будет форма -->
-      <a class="modal-search-hotel-button" href="#">Найти</a>
+      <form class="modal-search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="modal-search-hotel-list">
+          <li class="modal-search-hotel-calendar">
+            <label class="modal-search-hotel-title">Дата заезда:
+              <input class="modal-search-hotel-date" type="date" name="arrival-date" value="">
+            </label>
+            <button class="modal-search-hotel-icon" type="button" value="Календарь"><img src="img/calendar.svg" alt="Выбрать на календаре"></button>
+          </li>
+          <li class="modal-search-hotel-calendar">
+            <label class="modal-search-hotel-title">Дата выезда:
+              <input class="modal-search-hotel-date" type="date" name="departure-date" value="">
+            </label>
+            <button class="modal-search-hotel-icon" type="button" value="Календарь"><img src="img/calendar.svg" alt="Выбрать на календаре"></button>
+          </li>
+          <li class="modal-search-hotel-person">
+            <label class="modal-search-hotel-title" for="modal-search-hotel-adults">Взрослые:</label>
+            <button class="modal-search-hotel-less" type="button" value="Меньше">-</button>
+            <input class="modal-search-hotel-number" type="number" name="adults" id="modal-search-hotel-adults" value="" min="0" placeholder="2">
+            <button class="modal-search-hotel-more" type="button" value="Больше">+</button>
+          </li>
+          <li class="modal-search-hotel-person">
+            <label class="modal-search-hotel-title" for="modal-search-hotel-children">Дети:</label>
+            <button class="modal-search-hotel-less" type="button" value="Меньше">-</button>
+            <input class="modal-search-hotel-number" type="number" name="children" id="modal-search-hotel-children" value="" min="0" placeholder="0">
+            <button class="modal-search-hotel-more" type="button" value="Больше">+</button>
+          </li>
+        </ul>
+        <button class="modal-search-hotel-button" type="submit">Найти</button>
+      </form>
     </section>
   </body>
 </html>
