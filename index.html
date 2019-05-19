@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="header-logo">
+      <nav class="main-navigation" aria-label="Содержание">
+        <a class="header-logo" aria-label="Переход на главную страницу">
           <img src="img/header-logo.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
@@ -29,7 +29,7 @@
           <span class="mine-banner-type-4">"Because the Grand canyon sucks"</span>
         </p>
       </section>
-      <article class="invite">
+      <section class="invite">
         <h2 class="invite-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="invite-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <section class="invite-reasons-major-true-town">
@@ -38,7 +38,7 @@
             <span class="reasons-major-number">— №1 —</span>
             <p class="invite-reasons-major-text">Седона — не аттракцион для туристов, там течёт своя жизнь.</p>
           </div>
-          <img class="invite-reasons-major-true-town-photo" src="img/reasons-1.jpg" width="800" height="256" alt="Седона — небольшой городок в Аризоне">
+          <img class="invite-reasons-major-true-town-photo" src="img/reasons-1.jpg" width="800" height="256" alt="Панорама города">
         </section>
         <section class="invite-features">
           <ul class="invite-features-list">
@@ -92,7 +92,7 @@
             </li>
           </ul>
         </section>
-      </article>
+      </section>
       <section class="search-hotel">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="search-hotel-text">
@@ -107,52 +107,62 @@
       <p class="footer-hashtag">#visitSEDONA</p>
       <ul class="social">
         <li>
-          <a class="social-button" href="#"><img src="img/twitter.svg" width="46" height="48" alt="Седона в Twitter"></a>
+          <a class="social-button" href="#" aria-label="Седона в Twitter">
+            <img src="img/twitter.svg" width="46" height="48" alt="Логотип Twitter">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/fb-icon.svg" width="46" height="48" alt="Седона на Facebook"></a>
+          <a class="social-button" href="#" aria-label="Седона на Facebook">
+            <img src="img/fb-icon.svg" width="46" height="48" alt="Логотип Facebook">
+          </a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/youtube.svg" width="46" height="48" alt="Седона на YouTube"></a>
+          <a class="social-button" href="#" aria-label="Седона на YouTube">
+            <img src="img/youtube.svg" width="46" height="48" alt="Логотип YouTube">
+          </a>
         </li>
       </ul>
       <p>
         Website by
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Посетите сайт HTML Academy">
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Посетите сайт HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
-    <section class="modal-search-hotel">
+    <section class="search-hotel">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <form class="modal-search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="modal-search-hotel-list">
-          <li class="modal-search-hotel-calendar">
-            <label class="modal-search-hotel-title">Дата заезда:
-              <input class="modal-search-hotel-date" type="date" name="arrival-date" value="">
+      <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="search-hotel-list">
+          <li class="search-hotel-calendar">
+            <label class="search-hotel-title">Дата заезда:
+              <input class="search-hotel-date" type="date" name="arrival-date" value="">
             </label>
-            <button class="modal-search-hotel-icon" type="button" value="Календарь"><img src="img/calendar.svg" alt="Выбрать на календаре"></button>
+            <button class="search-hotel-icon" type="button" aria-label="Выбрать на календаре">
+              <img src="img/calendar.svg" alt="Календарь">
+            </button>
           </li>
-          <li class="modal-search-hotel-calendar">
-            <label class="modal-search-hotel-title">Дата выезда:
-              <input class="modal-search-hotel-date" type="date" name="departure-date" value="">
+          <li class="search-hotel-calendar">
+            <label class="search-hotel-title">Дата выезда:
+              <input class="search-hotel-date" type="date" name="departure-date" value="">
             </label>
-            <button class="modal-search-hotel-icon" type="button" value="Календарь"><img src="img/calendar.svg" alt="Выбрать на календаре"></button>
+            <button class="search-hotel-icon" type="button" aria-label="Выбрать на календаре">
+              <img src="img/calendar.svg" alt="Календарь">
+            </button>
           </li>
-          <li class="modal-search-hotel-person">
-            <label class="modal-search-hotel-title" for="modal-search-hotel-adults">Взрослые:</label>
-            <button class="modal-search-hotel-less" type="button" value="Меньше">-</button>
-            <input class="modal-search-hotel-number" type="number" name="adults" id="modal-search-hotel-adults" value="" min="0" placeholder="2">
-            <button class="modal-search-hotel-more" type="button" value="Больше">+</button>
+          <li class="search-hotel-person">
+            <label class="search-hotel-title" for="search-hotel-adults">Взрослые:</label>
+            <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
+            <input class="search-hotel-number" type="number" name="adults" id="search-hotel-adults" value="" min="0" placeholder="2">
+            <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
           </li>
-          <li class="modal-search-hotel-person">
-            <label class="modal-search-hotel-title" for="modal-search-hotel-children">Дети:</label>
-            <button class="modal-search-hotel-less" type="button" value="Меньше">-</button>
-            <input class="modal-search-hotel-number" type="number" name="children" id="modal-search-hotel-children" value="" min="0" placeholder="0">
-            <button class="modal-search-hotel-more" type="button" value="Больше">+</button>
+          <li class="search-hotel-person">
+            <label class="search-hotel-title" for="search-hotel-children">Дети:</label>
+            <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
+            <input class="search-hotel-number" type="number" name="children" id="search-hotel-children" value="" min="0" placeholder="0">
+            <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
           </li>
         </ul>
-        <button class="modal-search-hotel-button" type="submit">Найти</button>
+        <button class="search-hotel-button" type="submit">Найти</button>
       </form>
     </section>
   </body>
