@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="header">
       <nav class="main-navigation" aria-label="Основная навигация">
-        <a class="header-logo" aria-label="Переход на главную страницу">
+        <a class="header-logo" href="index.html" aria-label="Переход на главную страницу">
           <img src="img/header-logo.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
@@ -18,7 +21,7 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="hotels-container">
       <h1 class="visually-hidden">Отели</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
@@ -26,7 +29,7 @@
       </section>
       <section class="hotels-catalog">
         <h2 class="visually-hidden">Каталог отелей</h2>
-        <ul class="hotels-list">
+        <ul class="hotels-catalog">
           <li class="hotels-item">
             <a class="hotels-item-image" href="#" aria-label="Подробнее о гостинице Amara resort & spa">
               <img src="img/hotel-1.jpg" width="135" height="90" alt="Вид на гостиницу Amara resort & spa">
@@ -38,8 +41,8 @@
                 <span class="hotel-item-pricetag-price">От 4 000 р.</span>
               </p>
               <p class="hotels-item-buttons">
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button-left" href="#">Подробнее</a>
+                <a class="button-right" href="#">Забронировать</a>
               </p>
             </div>
             <div class="hotels-item-rating">
@@ -57,8 +60,8 @@
                 <span class="hotel-item-pricetag-price">От 3 000 р.</span>
               </p>
               <p class="hotels-item-buttons">
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button-left" href="#">Подробнее</a>
+                <a class="button-right" href="#">Забронировать</a>
               </p>
             </div>
             <div class="hotels-item-rating">
@@ -76,8 +79,8 @@
                 <span class="hotel-item-pricetag-price">От 2 000 р.</span>
               </p>
               <p class="hotels-item-buttons">
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button-left" href="#">Подробнее</a>
+                <a class="button-right" href="#">Забронировать</a>
               </p>
             </div>
             <div class="hotels-item-rating">
@@ -106,7 +109,7 @@
           </a>
         </li>
       </ul>
-      <p>
+      <p class="footer-logo-academy">
         Website by
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Посетите сайт HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">

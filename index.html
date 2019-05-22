@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -22,11 +25,9 @@
       <h1 class="visually-hidden">Туристический городок в штате Аризона</h1>
       <section class="main-banner">
         <h2 class="visually-hidden">Добро пожаловать</h2>
-        <p class="mine-banner-type">
-          <span class="mine-banner-type-1">Welcome</span>
-          <span class="mine-banner-type-2">to the gorgeous</span>
-          <span class="mine-banner-type-3">Sedona</span>
-          <span class="mine-banner-type-4">"Because the Grand canyon sucks"</span>
+        <p class="maie-banner-type">
+          <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
+          <span class="visually-hidden">Because the Grand canyon sucks"</span>
         </p>
       </section>
       <section class="invite">
@@ -122,14 +123,14 @@
           </a>
         </li>
       </ul>
-      <p>
+      <p class="footer-logo-academy">
         Website by
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Посетите сайт HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
-    <section class="search-hotel">
+    <section class="modal-search-hotel">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form class="search-hotel-form" method="post" action="https://echo.htmlacademy.ru">
         <ul class="search-hotel-list">
@@ -162,7 +163,7 @@
             <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
           </li>
         </ul>
-        <button class="search-hotel-button" type="submit">Найти</button>
+        <button class="modal-search-hotel-button" type="submit">Найти</button>
       </form>
     </section>
   </body>
