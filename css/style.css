@@ -34,36 +34,32 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  background-color: #e5f2fa;
+  color: #81b3b2;
 }
 
-  :focus {
-  outline: none;
-  }
-
-  .header-logo a {
-    text-align: center;
-  }
+.header-logo a {
+  text-align: center;
+}
 
 .main-banner {
   background-color: #90b2d0;
   background-image:
-  url("img/banner-welcome.svg"),
-  url("img/mine-banner.jpg");
+  url(".../img/banner-welcome.svg"),
+  url(".../img/mine-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-  .invite {
+.invite {
     text-align: center;
     background-color: #ffffff
   }
 
-  .invite-title {
-    font-size: 21px;
-    line-height: 26px;
-    color: #000000;
-  }
+.invite-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
 
 .invite-subtitle {
 font-size: 14px;
@@ -205,15 +201,16 @@ list-style: none;
   color: #000000;
 }
 
-.modal-search-hotel input {
+.search-input {
   background-color: #f2f2f2;
+  border: none;
 }
 
-.modal-search-hotel input:hover {
+.search-input:hover {
   background-color: #ebebeb;
 }
 
-.modal-search-hotel input:focus {
+.search-input:focus {
   background-color: #ffffff;
   border-width: 2px;
   border-style: solid;
@@ -224,6 +221,8 @@ list-style: none;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
+  border: none;
+
 
   background-color: #81b3b2;
 }
@@ -237,7 +236,7 @@ list-style: none;
   background-color: #5496bd;
 }
 
-li .site-navigation-current {
+.site-navigation-current {
   color: #766357;
 }
 
@@ -254,10 +253,18 @@ li .site-navigation-current {
   text-align: left;
 }
 
-.hotels-item-title a {
+.hotels-item-title {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+
+.hotels-item-title:hover {
+  color: #81b3b2;
+}
+
+.hotels-item-title:active {
+  color: #c9c9c9;
 }
 
 .hotel-item-pricetag-name,
@@ -277,12 +284,12 @@ li .site-navigation-current {
 }
 
 .button-left:hover{
-    background-color: #669ec0;
-  }
+  background-color: #669ec0;
+}
 
-  .button-left:active {
-    color: #88b6d1;
-    background-color: #5496bd;
+.button-left:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 .button-right {
@@ -311,5 +318,5 @@ li .site-navigation-current {
   background-color: #f2f2f2;
 }
 .hotels-item-rating-value::before {
-  background-image: url("img/star.svg");
+  background-image: url(.../"img/star.svg");
 }

@@ -25,10 +25,10 @@
       <h1 class="visually-hidden">Туристический городок в штате Аризона</h1>
       <section class="main-banner">
         <h2 class="visually-hidden">Добро пожаловать</h2>
-        <p class="maie-banner-type">
-          <span class="visually-hidden">Welcome to the gorgeous Sedona</span>
-          <span class="visually-hidden">Because the Grand canyon sucks"</span>
-        </p>
+        <div class="maie-banner">
+          <img class="banner-image" src="img/mine-banner.jpg" width="1200" height="510" alt="Вид на горы">
+          <img class="banner-type" src="img/banner-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona Because the Grand canyon sucks">
+        </div>
       </section>
       <section class="invite">
         <h2 class="invite-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -136,7 +136,7 @@
         <ul class="search-hotel-list">
           <li class="search-hotel-calendar">
             <label class="search-hotel-title">Дата заезда:
-              <input class="search-hotel-date" type="date" name="arrival-date" value="">
+              <input class="search-input search-hotel-date" type="date" name="arrival-date" value="">
             </label>
             <button class="search-hotel-icon" type="button" aria-label="Выбрать на календаре">
               <img src="img/calendar.svg" alt="Календарь">
@@ -144,7 +144,7 @@
           </li>
           <li class="search-hotel-calendar">
             <label class="search-hotel-title">Дата выезда:
-              <input class="search-hotel-date" type="date" name="departure-date" value="">
+              <input class="search-input search-hotel-date" type="date" name="departure-date" value="">
             </label>
             <button class="search-hotel-icon" type="button" aria-label="Выбрать на календаре">
               <img src="img/calendar.svg" alt="Календарь">
@@ -153,13 +153,13 @@
           <li class="search-hotel-person">
             <label class="search-hotel-title" for="search-hotel-adults">Взрослые:</label>
             <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
-            <input class="search-hotel-number" type="number" name="adults" id="search-hotel-adults" value="" min="0" placeholder="2">
+            <input class="search-input search-hotel-number" type="number" name="adults" id="search-hotel-adults" value="" min="0" placeholder="2">
             <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
           </li>
           <li class="search-hotel-person">
             <label class="search-hotel-title" for="search-hotel-children">Дети:</label>
             <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
-            <input class="search-hotel-number" type="number" name="children" id="search-hotel-children" value="" min="0" placeholder="0">
+            <input class="search-input search-hotel-number" type="number" name="children" id="search-hotel-children" value="" min="0" placeholder="0">
             <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
           </li>
         </ul>
