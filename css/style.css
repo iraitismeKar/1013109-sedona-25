@@ -31,7 +31,6 @@ svg {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
-  overflow: hidden;
 }
 
 .main-header {
@@ -39,7 +38,7 @@ svg {
 }
 
 .main-navigation {
-  width: 1200px;
+  width: 100%;
   height: 60px;
   margin-top: 0px;
   font-size: 14px;
@@ -51,9 +50,9 @@ svg {
 
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   height: 60px;
   margin: 0px;
   list-style: none;
@@ -64,6 +63,20 @@ svg {
   color: #000000;
 }
 
+.navigation-space {
+  display: inline-block;
+  width: 239px;
+  text-align: center;
+
+}
+
+.navigation-space-left {
+  margin-right: 119px;
+}
+
+.navigation-space-right {
+  margin-left: 119px;
+}
 
 .navigation-item:hover,
 .navigation-item:focus {
@@ -91,7 +104,7 @@ svg {
 
 .banner-image {
   position: relative;
-  width: 1200px;
+  width: 100%;
   min-height: 510px;
   margin: 0px;
   padding: 0px;
@@ -420,13 +433,12 @@ svg {
 .search-input-person {
   margin-right: 5px;
   margin-bottom: 20px;
-  padding: 5px;
 }
 
 .search-input {
   background-color: #f2f2f2;
   border: none;
-  padding: 0px;
+  padding: 5px;
 }
 
 .search-input:hover {
@@ -446,7 +458,15 @@ svg {
   color: #cacaca;
   background-color: #f2f2f2;
   border: none;
-  margin: -3px;
+  padding: 5px;
+  margin: -4px;
+}
+
+.search-hotel-icon {
+  padding-left: 0px;
+  padding-bottom: 2px;
+  line-height: 26px;
+
 }
 
 .search-hotel-icon:hover,
@@ -583,16 +603,10 @@ color: #000000;
   position: relative;
   color: #000000;
   background-color: #ffffff;
-  width: 1200px;
-  margin: 0px auto;
-  padding: 0px;
 }
 
 .filters {
-  width: 1200px;
   height: 305px;
-  margin: 0px;
-  padding: 0px;
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -602,8 +616,6 @@ color: #000000;
 
 .hotels-catalog {
   list-style: none;
-  width: 1200px;
-  width: 1200px;
   border-color: #ffffff;
   padding: 0px;
   margin: 0px;
@@ -640,8 +652,8 @@ margin-right: 25px;
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  width: 650px;
-  height: 91px;
+  flex: 1;
+  min-height: 91px;
 }
 
 .hotels-item-title {
@@ -737,12 +749,7 @@ margin-right: 25px;
   width: 110px;
   height: 27px;
   text-align: center;
-  margin-left: 130px;
-  margin-top: 63px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  padding: 0px;
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 .hotels-item-rating-value {
@@ -755,6 +762,94 @@ margin-right: 25px;
 
   background-color: #f2f2f2;
 }
-.hotels-item-rating::before {
-  background-image: url("../img/star.svg");
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  margin: 1em;
+}
+
+.rating-group {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 90px;
+  height: 17px;
+  background-color: #ffffff;
+  background-size: 18px 17px;
+}
+/*
+.rating-group:focus-within {
+  outline: solid 0.15em #81b3d2;
+  outline-offset: 0.15em;
+}
+*/
+
+.star-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  width: 18px;
+  height: 17px;
+  font-size: inherit;
+  background-size: 18px 17px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.star-input:focus {
+  outline: none;
+}
+/*
+.star-input:focus ~ .rating-focus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  outline: solid 0.15em #81b3d2;
+  outline-offset: 0.15em;
+}
+*/
+.star-input:checked + .star-label,
+.star-input:hover {
+  background-image: url(../img/star.svg);
+  background-size: 18px 17px;
+}
+
+/*
+.star-input:hover ~ .star-input {
+  background-color: #ffffff;
+  background-size: 17px 18px;
+}
+*/
+.star-input:nth-of-type(1) {
+  z-index: 5;
+  width: 18px;
+}
+
+.star-input:nth-of-type(2) {
+  z-index: 4;
+  width: 36px;
+}
+
+.star-input:nth-of-type(3) {
+  z-index: 3;
+  width: 54px;
+}
+
+.star-input:nth-of-type(4) {
+  z-index: 2;
+  width: 72px;
+}
+
+.star-input:nth-of-type(5) {
+  z-index: 1;
+  width: 90px;
 }

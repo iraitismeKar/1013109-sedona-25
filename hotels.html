@@ -14,11 +14,10 @@
           <img src="img/header-logo.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li><a class="navigation-item" href="info.html">Информация</a></li>
-          <li><a class="navigation-item" href="gallery.html">Фото и видео</a></li>
-          <li><div class="navigation-item"></div></li>
-          <li><a class="navigation-item" href="map.html">Карта штата</a></li>
-          <li><a class="navigation-item site-navigation-current" href="hotels.html">Гостиницы</a></li>
+          <li class="navigation-space"><a class="navigation-item" href="info.html">Информация</a></li>
+          <li class="navigation-space navigation-space-left"><a class="navigation-item" href="gallery.html">Фото и видео</a></li>
+          <li class="navigation-space navigation-space-right"><a class="navigation-item" href="map.html">Карта штата</a></li>
+          <li class="navigation-space"><a class="navigation-item site-navigation-current" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -68,6 +67,26 @@
               </p>
             </div>
             <div class="hotels-item-rating">
+              <fieldset class="star-rating">
+                <legend class="visually-hidden">Рейтинг мотеля Desert quail inn</legend>
+                <div class="rating-group">
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-1" value="1" readonly>
+                  <label class="star-label" for="rating_Desert_quail_inn-1" aria-label="Ужасный"></label>
+
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-2" value="2" readonly>
+                  <label class="star-label" for="rating_Desert_quail_inn-2" aria-label="Плохой"></label>
+
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-3" value="3" readonly checked>
+                  <label class="star-label" for="rating_Desert_quail_inn-3" aria-label="Нормальный"></label>
+
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-4" value="4" readonly>
+                  <label class="star-label" for="rating_Desert_quail_inn-4" aria-label="Хороший"></label>
+
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-5" value="5" readonly>
+                  <label class="star-label" for="rating_Desert_quail_inn-5" aria-label="Превосходный"></label>
+                  <div class="rating-focus"></div>
+                </div>
+              </fieldset>
               <p class="hotels-item-rating-value">Рейтинг: 8,9</p>
             </div>
           </li>
