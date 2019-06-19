@@ -24,7 +24,69 @@
     <main class="hotels-container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-        <!--Тут будет форма-->
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="infrastructure">
+            <legend class="filter-title">Инфраструктура:</legend>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="pool" checked>
+              Бассейн
+            </label>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="parking">
+              Парковка
+            </label>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="Wi-fi">
+              Wi-fi
+            </label>
+          </fieldset>
+          <fieldset class="type-housing">
+            <legend class="filter-title">Тип жилья:</legend>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="hotel" checked>
+              Гостиница
+            </label>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="motel" checked>
+              Мотель
+            </label>
+            <label class="filter-name">
+              <input class="filter-option" type="checkbox" name="apartments" checked>
+              Апартаменты
+            </label>
+          </fieldset>
+          <section class="filter-range">
+            <h2 class="visually-hidden">Диапозон цен</h2>
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input class="price-input" type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input class="price-input" type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="button-transparent" type="submit">Показать</button>
+          </section>
+
+        </form>
+        <section class="found-sorting">
+          <h2 class="visually-hidden">Результат сортировки</h2>
+          <ul class="found-list">
+            <li class="found-item1">Найдено:3</li>
+            <li class="found-item2">Сортировка:</li>
+            <li class="found-item3">По цене</li>
+            <li class="found-item4">По типу</li>
+            <li class="found-item5">По рейтингу</li>
+          </ul>
+          <div class="sorting">
+            <img class="sorting-up" src="img/icon-up-dir.svg" alt="Сортировка снизу вверх">
+            <img class="sorting-up" src="img/icon-down-dir.svg" alt="Сортировка сверху вниз">
+          </div>
+        </section>
       </section>
       <section class="hotels-catalog">
         <h2 class="visually-hidden">Каталог отелей</h2>
@@ -70,19 +132,18 @@
               <fieldset class="star-rating">
                 <legend class="visually-hidden">Рейтинг мотеля Desert quail inn</legend>
                 <div class="rating-group">
-                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-1" value="1" readonly>
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-1" value="1" disabled>
                   <label class="star-label" for="rating_Desert_quail_inn-1" aria-label="Ужасный"></label>
 
-                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-2" value="2" readonly>
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-2" value="2" disabled>
                   <label class="star-label" for="rating_Desert_quail_inn-2" aria-label="Плохой"></label>
-
-                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-3" value="3" readonly checked>
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-3" value="3" checked>
                   <label class="star-label" for="rating_Desert_quail_inn-3" aria-label="Нормальный"></label>
 
-                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-4" value="4" readonly>
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-4" value="4" disabled>
                   <label class="star-label" for="rating_Desert_quail_inn-4" aria-label="Хороший"></label>
 
-                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-5" value="5" readonly>
+                  <input class="star-input" type="radio" name="rating_Desert_quail_inn" id="rating_Desert_quail_inn-5" value="5" disabled>
                   <label class="star-label" for="rating_Desert_quail_inn-5" aria-label="Превосходный"></label>
                   <div class="rating-focus"></div>
                 </div>
@@ -117,7 +178,7 @@
     <footer class="main-footer">
       <p class="footer-hashtag">#visitSEDONA</p>
       <ul class="social">
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона в Twitter">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
               <desc>Логотип Twitter</desc>
@@ -125,7 +186,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона на Facebook">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <desc>Логотип Facebook</desc>
@@ -133,7 +194,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона на YouTube">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
               <desc>Логотип YouTube</desc>

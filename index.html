@@ -26,8 +26,8 @@
       <section class="main-banner">
         <h2 class="visually-hidden">Добро пожаловать</h2>
           <div class="banner-container">
-            <div class="banner-image" title="Вид на горы"></div>
-            <div class="banner-type" title="Welcome to the gorgeous Sedona Because the Grand canyon sucks"></div>
+            <div class="banner-image"></div>
+            <div class="banner-type" role="img" aria-label="Welcome to the gorgeous Sedona Because the Grand canyon sucks"></div>
           </div>
       </section>
       <section class="invite">
@@ -121,31 +121,52 @@
               </div>
             </li>
             <li class="search-hotel-calendar">
-              <label class="search-hotel-title">Дата выезда:</label>
-              <div class="search-input-date" for="departure-date">
+              <label class="search-hotel-title" for="departure-date">Дата выезда:</label>
+              <div class="search-input-date">
                 <input class="search-input search-hotel-date" id="departure-date" type="date" name="departure-date" value="">
                 <button class="search-hotel-icon" type="button" aria-label="Выбрать на календаре">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                     <desc>Календарь</desc>
                     <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
-                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>                    </svg>
+                    <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                  </svg>
                 </button>
               </div>
             </li>
             <li class="search-hotel-person">
               <label class="search-hotel-title" for="search-hotel-adults">Взрослые:</label>
-              <div class="search-input-person">
-                <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
+              <div class="search-input-person search_input_one">
+                <button class="search-hotel-less" type="button" aria-label="Меньше">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="3px" viewBox="4.5 9.5 12 3" enable-background="new 4.5 9.5 12 3" xml:space="preserve">
+                    <desc>Меньше</desc>
+                    <rect x="4.5" y="9.5" width="12" height="3"/>
+                  </svg>
+                </button>
                 <input class="search-input search-hotel-number" type="number" name="adults" id="search-hotel-adults" value="" min="0" placeholder="2">
-                <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
+                <button class="search-hotel-more" type="button" aria-label="Больше">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="11px" viewBox="5 5.5 11 11" enable-background="new 5 5.5 11 11" xml:space="preserve">
+                    <desc>Больше</desc>
+                  <polygon points="16,9.5 12,9.5 12,5.5 9,5.5 9,9.5 5,9.5 5,12.5 9,12.5 9,16.5 12,16.5 12,12.5 16,12.5 "/>
+                  </svg>
+                </button>
               </div>
             </li>
             <li class="search-hotel-person">
               <label class="search-hotel-title" for="search-hotel-children">Дети:</label>
               <div class="search-input-person">
-                <button class="search-hotel-less" type="button" aria-label="Меньше">-</button>
+                <button class="search-hotel-less" type="button" aria-label="Меньше">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="3px" viewBox="4.5 9.5 12 3" enable-background="new 4.5 9.5 12 3" xml:space="preserve">
+                    <desc>Меньше</desc>
+                    <rect x="4.5" y="9.5" width="12" height="3"/>
+                  </svg>
+                </button>
                 <input class="search-input search-hotel-number" type="number" name="children" id="search-hotel-children" value="" min="0" placeholder="0">
-                <button class="search-hotel-more" type="button" aria-label="Больше">+</button>
+                <button class="search-hotel-more" type="button" aria-label="Больше">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="11px" viewBox="5 5.5 11 11" enable-background="new 5 5.5 11 11" xml:space="preserve">
+                    <desc>Больше</desc>
+                  <polygon points="16,9.5 12,9.5 12,5.5 9,5.5 9,9.5 5,9.5 5,12.5 9,12.5 9,16.5 12,16.5 12,12.5 16,12.5 "/>
+                  </svg>
+                </button>
               </div>
             </li>
           </ul>
@@ -157,7 +178,7 @@
     <footer class="main-footer">
       <p class="footer-hashtag">#visitSEDONA</p>
       <ul class="social">
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона в Twitter">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
               <desc>Логотип Twitter</desc>
@@ -165,7 +186,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона на Facebook">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
               <desc>Логотип Facebook</desc>
@@ -173,7 +194,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="social-item">
           <a class="social-button" href="#" aria-label="Седона на YouTube">
             <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
               <desc>Логотип YouTube</desc>
