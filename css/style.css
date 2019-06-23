@@ -103,12 +103,17 @@ svg {
   margin: 0px;
 }
 
-.banner-container::before {
+.main-banner::after {
   content: "";
   position: absolute;
-  background-image: url("../img/banner-mask.svg");
+  bottom: -1px;
+  top: 502px;
+  background: url("../img/banner-mask.svg") no-repeat center bottom;
+  height: 70px;
+  background-size: 100% auto;
+  z-index: 1;
   width: 100%;
-  top: 510px;
+
 }
 
 .banner-image {
@@ -189,7 +194,7 @@ svg {
 }
 
 .invite-features-icon {
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .invite-features-type-text {
@@ -324,15 +329,17 @@ svg {
 
 .search-hotel {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 53px;
+  padding-bottom: 45px;
   margin: 0px;
   background-color: #ffffff;
 }
 
 .search-hotel-text-title {
+  display: inline-block;
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 26px;
   color: #000000;
 }
 
@@ -341,6 +348,7 @@ svg {
   line-height: 24px;
   font-weight: normal;
   color: #333333;
+  margin: 0px;
 }
 
 .modal-search-hotel {
