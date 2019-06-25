@@ -402,6 +402,36 @@ svg {
   z-index: 1;
 }
 
+.hotel-form-hide {
+  animation-name: formhide;
+}
+
+.hotel-form-show {
+  animation-name: formshow;
+}
+
+@keyframes formhide {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+
+}
+
+
+@keyframes formshow {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+
 .search-hotel-date {
   width: 310px;
 }
