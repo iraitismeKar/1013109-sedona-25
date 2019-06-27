@@ -29,7 +29,8 @@ svg {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
 }
 
@@ -39,12 +40,15 @@ svg {
   display: block;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   z-index: 1;
 }
 
 .main-navigation {
   width: 100%;
+  min-height: 60px;
   margin-top: 0px;
   font-size: 14px;
   line-height: 26px;
@@ -54,13 +58,18 @@ svg {
 
 .site-navigation {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   margin: 0px;
   list-style: none;
   padding: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 63px;
 }
 
@@ -69,7 +78,9 @@ svg {
   min-height: 60px;
   width: 1200px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   z-index: 1;
 }
 
@@ -109,6 +120,8 @@ svg {
 }
 
 .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 1200px;
@@ -146,7 +159,9 @@ svg {
   width: 460px;
   height: 353px;
   left: 49%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   top: 76px;
   margin: 0px;
   background-image: url("../img/banner-welcome.svg");
@@ -180,25 +195,43 @@ svg {
 }
 
 .invite-reasons-major-true-town {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px;
   padding: 0px;
 }
 
 .invite-reasons-major-true-town-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
 }
 
 .invite-features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -216,9 +249,16 @@ svg {
 }
 
 .invite-features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
   padding: 0px;
   padding-bottom: 70px;
@@ -230,10 +270,17 @@ svg {
 }
 
 .invite-reasons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -241,9 +288,16 @@ svg {
 }
 
 .invite-reasons-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 45px;
   width: 400px;
 }
@@ -270,17 +324,31 @@ svg {
 }
 
 .invite-reasons-major-devils-bridge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin: 0px;
   padding: 0px;
 }
 
 .invite-reasons-major-devils-bridge-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
 }
 
@@ -325,10 +393,15 @@ svg {
 }
 
 .invite-reasons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px;
   padding: 0px;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #eeeeee;
 }
 
@@ -370,10 +443,18 @@ svg {
 }
 
 .modal-search-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   background-color: #ffffff;
   width: 1200px;
@@ -384,7 +465,8 @@ svg {
   position: relative;
   width: 575px;
   height: 86px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -412,7 +494,8 @@ svg {
 
 .search-hotel-form {
   position: absolute;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 55px;
   padding-top: 60px;
   margin: 0px;
@@ -422,27 +505,63 @@ svg {
   top:0%;
   background-color: #ffffff;
   z-index: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hotel-form-hide {
-  animation-name: formhide;
-  animation-duration: 0.6s;
+  -webkit-animation-name: formhide;
+          animation-name: formhide;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .hotel-form-show {
-  animation-name: formshow;
-  animation-duration: 0.6s;
+  -webkit-animation-name: formshow;
+          animation-name: formshow;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes formhide {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
 }
 
 @keyframes formhide {
   0% {
     opacity: 1;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   100% {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+}
+
+
+@-webkit-keyframes formshow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 
 }
@@ -451,11 +570,13 @@ svg {
 @keyframes formshow {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 
 }
@@ -479,11 +600,21 @@ svg {
 }
 
 .search-hotel-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   width: 465px;
   padding: 0px;
@@ -491,9 +622,15 @@ svg {
 }
 
 .search-hotel-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
   min-width: 160px;
   margin: 0px;
   margin-bottom: 55px;
@@ -501,9 +638,16 @@ svg {
 }
 
 .search-hotel-calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0px;
   margin-bottom: 33px;
 }
@@ -523,8 +667,12 @@ svg {
 }
 
 .search-input-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-right: 5px;
 }
 
@@ -546,18 +694,26 @@ svg {
 }
 
 .search-input-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search-hotel-icon,
 .search-hotel-less,
 .search-hotel-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #cacaca;
   background-color: #f2f2f2;
   border: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search-hotel-icon {
@@ -580,7 +736,9 @@ color: #000000;
 }
 
 .modal-search-hotel-button {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -606,11 +764,14 @@ color: #000000;
 
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding: 20px 95px 20px 135px;
   background-color: rgba(255,255,255,0.9);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 120px;
   margin: 0px;
@@ -629,6 +790,8 @@ color: #000000;
 }
 
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0px;
@@ -637,6 +800,8 @@ color: #000000;
 
 
 .social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 7px;
 }
@@ -646,6 +811,8 @@ color: #000000;
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 46px;
   height: 48px;
@@ -671,15 +838,25 @@ color: #000000;
 }
 
 .footer-logo-academy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   width: 200px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 4px;
 }
 
@@ -723,14 +900,23 @@ color: #000000;
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 25px 72px;
 }
 
 .infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 150px;
   color: #ffffff;
   font-size: 14px;
@@ -742,9 +928,16 @@ color: #000000;
 }
 
 .type-housing {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-width: 150px;
   color: #ffffff;
   font-size: 14px;
@@ -799,6 +992,8 @@ color: #000000;
 }
 
 .filter-option:checked + .filter-name::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0px;
@@ -834,7 +1029,9 @@ color: #000000;
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .min-price,
@@ -895,7 +1092,8 @@ color: #000000;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -934,15 +1132,22 @@ color: #000000;
 }
 
 .found-sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 72px;
   padding-right: 58px;
   text-align: center;
 }
 
 .found-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 280px;
   list-style: none;
@@ -964,9 +1169,15 @@ color: #000000;
 }
 
 .sorting-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   position: relative;
   margin: 0px;
   margin-right: 516px;
@@ -974,6 +1185,8 @@ color: #000000;
 }
 
 .sorting-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #bcbec0;
   font-size: 12px;
@@ -1003,10 +1216,14 @@ color: #000000;
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .sorting-up-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1042,20 +1259,33 @@ color: #000000;
 }
 
 .hotels-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   list-style: none;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 0px;
   margin: 0px;
 }
 
 .hotels-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 26px 70px;
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1064,12 +1294,20 @@ margin-right: 25px;
 }
 
 .hotels-item-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   min-height: 91px;
 }
 
@@ -1120,7 +1358,8 @@ margin-right: 25px;
   height: 27px;
   padding: 3px;
   margin-right: 6px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -1144,7 +1383,8 @@ margin-right: 25px;
   width: 142px;
   height: 27px;
   padding: 3px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -1163,15 +1403,22 @@ margin-right: 25px;
 }
 
 .hotels-item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 110px;
   text-align: center;
-  align-self: flex-end
+  -ms-flex-item-align: end;
+      align-self: flex-end
 }
 
 .star-1 {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-image: url("../img/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
@@ -1181,7 +1428,8 @@ margin-right: 25px;
 }
 
 .star-2 {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-image: url("../img/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
@@ -1191,7 +1439,8 @@ margin-right: 25px;
 }
 
 .star-3 {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-image: url("../img/star.svg");
   background-repeat: space;
   background-size: 18px 17px;
