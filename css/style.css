@@ -33,8 +33,14 @@ svg {
   clip: rect(0, 0, 0, 0);
 }
 
-.main-header {
-  position: relative;
+
+.header-logo {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
 }
 
 .main-navigation {
@@ -44,19 +50,29 @@ svg {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
 .site-navigation {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 60px;
   margin: 0px;
   list-style: none;
   padding: 0px;
+  box-sizing: border-box;
+  padding: 0 72px;
+}
+
+.main-header {
+  position: relative;
+  min-height: 60px;
+  width: 1200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
 }
 
 .navigation-item {
@@ -64,19 +80,22 @@ svg {
 }
 
 .navigation-space {
-  display: inline-block;
-  width: 239px;
-  text-align: center;
+  width: 20%;
+  padding: 10px;
+}
+
+.navigation-space:nth-child(1),
+.navigation-space:nth-child(2) {
+  text-align: left;
 }
 
 .navigation-space:nth-child(2){
-  position: relative;
-  left: -78px;
+  margin-right: auto;
 }
 
-.navigation-space:nth-child(3){
-  position: relative;
-  left: 83px;
+.navigation-space:nth-child(3),
+.navigation-space:nth-child(4) {
+  text-align: right;
 }
 
 .navigation-item:hover,
@@ -84,14 +103,9 @@ svg {
   color: #81b3d2;
 }
 
-.header-logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 1;
-}
 
 .main-banner {
+  position: relative;
   background-color: #90b2d0;
   margin: 0px;
 }
@@ -106,10 +120,10 @@ svg {
 .main-banner::after {
   content: "";
   position: absolute;
-  bottom: -1px;
-  top: 502px;
+  display: block;
+  bottom: 0px;
   background: url("../img/banner-mask.svg") no-repeat center bottom;
-  height: 70px;
+  height: 57px;
   z-index: 1;
   width: 100%;
   left: 0;
@@ -183,12 +197,14 @@ svg {
 
 .invite-features-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   margin: 0px;
-  padding: 61px 0px;
-  padding-bottom: 70px;
+  padding: 0px;
+  padding-top: 61px;
 
   background-color: #ffffff
 }
@@ -206,10 +222,12 @@ svg {
   flex-direction: column;
   align-items: center;
   width: 400px;
+  padding: 0px;
+  padding-bottom: 70px;
 }
 
 .invite-reasons {
-  padding: 45px 0px;
+  padding-top: 45px;
   background-color: #eeeeee;
 }
 
@@ -217,6 +235,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -227,6 +246,7 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 45px;
   width: 400px;
 }
 
@@ -388,6 +408,10 @@ svg {
   background-color: #503e33;
 }
 
+.modal-search-cover {
+  overflow: hidden;
+}
+
 .search-hotel-form {
   position: absolute;
   box-sizing: border-box;
@@ -400,6 +424,7 @@ svg {
   top:0%;
   background-color: #ffffff;
   z-index: 1;
+  animation-fill-mode: forwards;
 }
 
 .hotel-form-hide {
@@ -415,11 +440,11 @@ svg {
 @keyframes formhide {
   0% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
   }
   100% {
     opacity: 0;
-    transform: translateY(-100);
+    transform: translateY(-100%);
   }
 
 }
@@ -428,11 +453,11 @@ svg {
 @keyframes formshow {
   0% {
     opacity: 0;
-    transform: translateY(-100);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
   }
 
 }
@@ -447,11 +472,12 @@ svg {
   width: 40px;
 }
 
+
 .main-map {
   position: relative;
-  display: block;
   margin: 0px;
   width: 1200px;
+  background: url("../img/map.jpg") no-repeat bottom center;
 }
 
 .search-hotel-list {
@@ -506,7 +532,7 @@ svg {
 
 .search-input {
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid transparent;
   padding: 5px;
 }
 
@@ -1050,6 +1076,7 @@ margin-right: 25px;
 }
 
 .hotels-item-title {
+  display: inline;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
