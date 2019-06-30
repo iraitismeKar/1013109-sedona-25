@@ -5,7 +5,7 @@
     <title>Sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-mini.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -64,22 +64,22 @@
         <section class="found-sorting">
           <h2 class="visually-hidden">Результат сортировки</h2>
           <ul class="found-list">
-            <li class="found-item1">Найдено:3</li>
+            <li class="found-item1">Найдено: 3</li>
             <li class="found-item2">Сортировка:</li>
           </ul>
           <div class="sorting-list">
             <input class="sorting-input visually-hidden" type="radio" name="sort" id="by-price" value="by-price" checked>
-            <label class="sorting-item" for="by-price">По цене</label>
+            <label class="sorting-item" for="by-price"><a class="sorting-link">По цене</a></label>
             <input class="sorting-input visually-hidden" type="radio" name="sort" id="by-type" value="by-type">
-            <label class="sorting-item" for="by-type">По типу</label>
+            <label class="sorting-item" for="by-type"><a class="sorting-link">По типу</a></label>
             <input class="sorting-input visually-hidden" type="radio" name="sort" id="by-rank" value="by-rank">
-            <label class="sorting-item" for="by-rank">По рейтингу</label>
+            <label class="sorting-item" for="by-rank"><a class="sorting-link">По рейтингу</a></label>
           </div>
           <div class="sorting">
               <input class="sorting-up-down visually-hidden" type="radio" id="up" name="up-down" value="up" aria-label="Сортировка снизу вверх">
-              <label class="sorting-label" for="up"><svg class="sorting-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></label>
+              <label class="sorting-label" for="up"><a class="sorting-link-arrow"><svg class="sorting-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></a></label>
               <input class="sorting-up-down visually-hidden" type="radio" id="down" name="up-down" value="down" aria-label="Сортировка сверху вниз" checked>
-              <label class="sorting-label" for="down"><svg class="sorting-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></label>
+              <label class="sorting-label" for="down"><a class="sorting-link-arrow"><svg class="sorting-arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></a></label>
           </div>
         </section>
       </section>
@@ -91,9 +91,7 @@
               <img src="img/hotel-1.jpg" width="135" height="90" alt="Вид на гостиницу Amara resort & spa">
             </a>
             <div class="hotels-item-type">
-              <a href="#">
-                <h3 class="hotels-item-title">Amara resort & spa</h3>
-              </a>
+                <h3 class="hotels-item-title"><a class="hotels-item-link" href="#">Amara resort & spa</a></h3>
               <p class="hotel-item-pricetag">
                 <span class="hotel-item-pricetag-name">Гостиница</span>
                 <span class="hotel-item-pricetag-price">От 4 000 р.</span>
@@ -113,8 +111,7 @@
               <img src="img/hotel-2.jpg" width="135" height="90" alt="Вид на мотель Desert quail inn">
             </a>
             <div class="hotels-item-type">
-              <a href="#">
-                <h3 class="hotels-item-title">Desert quail inn</h3></a>
+                <h3 class="hotels-item-title"><a class="hotels-item-link" href="#">Desert quail inn</a></h3>
               <p class="hotel-item-pricetag">
                 <span class="hotel-item-pricetag-name">Мотель</span>
                 <span class="hotel-item-pricetag-price">От 3 000 р.</span>
@@ -134,9 +131,7 @@
               <img src="img/hotel-3.jpg" width="135" height="90" Alt="Вид на аппартаменты Villas at poco diablo">
             </a>
             <div class="hotels-item-type">
-              <a href="#">
-                <h3 class="hotels-item-title">Villas at poco diablo</h3>
-              </a>
+              <h3 class="hotels-item-title"><a class="hotels-item-link" href="#">Villas at poco diablo</a></h3>
               <p class="hotel-item-pricetag">
                 <span class="hotel-item-pricetag-name">Апартаменты</span>
                 <span class="hotel-item-pricetag-price">От 2 000 р.</span>
