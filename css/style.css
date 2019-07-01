@@ -11,7 +11,8 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.14);
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.14);
+          box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.14);
 }
 
 a {
@@ -72,6 +73,8 @@ svg {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1px 62px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-header {
@@ -115,6 +118,11 @@ svg {
 
 .navigation-space:nth-child(4) {
   padding-right: 10px;
+}
+
+.navigation-space:nth-child(n+5) {
+  width: 12%;
+  margin-top: 15px;
 }
 
 .navigation-item:hover,
@@ -240,7 +248,9 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-          align-items: top;
+          -webkit-box-align: top;
+              -ms-flex-align: top;
+                  align-items: top;
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -282,7 +292,9 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-          align-items: top;
+          -webkit-box-align: top;
+              -ms-flex-align: top;
+                  align-items: top;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
@@ -699,6 +711,33 @@ svg {
   background-color: #f2f2f2;
   border: 2px solid transparent;
   padding: 4px 5px 3px 10px;
+  height: 37px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .search-input::placeholder {
@@ -718,6 +757,7 @@ svg {
   border-width: 2px;
   border-style: solid;
   border-color: #e5e5e5;
+  outline: none;
 }
 
 .search-input-date {
@@ -743,6 +783,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .search-hotel-less {
@@ -754,7 +795,8 @@ svg {
 }
 
 .search-hotel-icon {
-  padding-left: 0px;
+  padding-left: 6px;
+  padding-right: 9px;
   height: 100%;
 
 }
@@ -763,14 +805,20 @@ svg {
 .search-hotel-less:hover,
 .search-hotel-more:hover {
 color: #000000;
-background-color: #ebebeb
+background-color: #f2f2f2;
+}
+
+.search-hotel-icon:focus,
+.search-hotel-less:focus,
+.search-hotel-more:focus {
+  outline: none;
 }
 
 .search-hotel-icon:active,
 .search-hotel-less:active,
 .search-hotel-more:active {
   color: #81b3d2;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .modal-search-hotel-button {
@@ -806,12 +854,12 @@ background-color: #ebebeb
 }
 
 .title-1 {
-  margin-right: 24px;
+  margin-right: 25px;
 }
 
 .search-hotel-number {
   text-align: center;
-  width: 40px;
+  width: 53px;
   padding: 4px;
 }
 
@@ -955,7 +1003,8 @@ background-color: #ebebeb
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 28px 72px 14px 70px;
   background-image: url("../img/background-filter.jpg");
   background-repeat: no-repeat;
@@ -1137,7 +1186,9 @@ background-color: #ebebeb
 
 .price-input {
   width: 50px;
+  height: 27px;
   margin: 0;
+  padding: 0px;
 
   color: inherit;
   font: inherit;
@@ -1421,7 +1472,8 @@ margin-right: 30px;
   color: #000000;
   display: inline;
   background: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hotels-item-link:visited {
